@@ -243,3 +243,21 @@ margin-bottom:25px;
     outline:none;
     box-shadow:0 0 10px rgba(0,255,136,.4);
 }
+
+.date{
+    float:right;
+    opacity:.7;
+    font-size:.9rem;
+}
+
+.accordion summary{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
+    list-style:none;
+}
+
+.accordion summary::-webkit-details-marker{
+    display:none;
+}
