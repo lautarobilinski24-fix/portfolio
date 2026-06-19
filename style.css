@@ -213,3 +213,33 @@ text-align:left;
 opacity:.8;
 margin-bottom:25px;
 }
+
+.contact-text{
+    margin-bottom:20px;
+    opacity:.85;
+}
+
+.email-box{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+    margin:25px 0;
+    flex-wrap:wrap;
+}
+
+.email-box input{
+    width:320px;
+    padding:12px;
+    background:#111;
+    border:1px solid #00ff88;
+    border-radius:8px;
+    color:#00ff88;
+    text-align:center;
+    font-size:15px;
+}
+
+.email-box input:focus{
+    outline:none;
+    box-shadow:0 0 10px rgba(0,255,136,.4);
+}
