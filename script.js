@@ -34,3 +34,12 @@ setInterval(draw,40);
 window.addEventListener("resize",()=>{
 location.reload();
 });
+function copyEmail() {
+
+    const email = document.getElementById("email");
+
+    navigator.clipboard.writeText(email.value);
+
+    alert("Email copiado al portapapeles");
+
+}
