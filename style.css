@@ -339,6 +339,39 @@ margin-bottom:25px;
     line-height:1.5;
 }
 
+/* CERTIFICACIONES FIX */
+.cert-content{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
 .cert-item{
-    margin-bottom:10px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:15px;
+    padding:12px 14px;
+    border:1px solid rgba(0,255,136,0.2);
+    border-radius:10px;
+    background:rgba(0,0,0,0.25);
+    flex-wrap:wrap;
+}
+
+.cert-item p{
+    margin:0;
+    flex:1;
+    min-width:220px;
+    color:#fff;
+    opacity:0.9;
+}
+
+.cert-item .btn{
+    white-space:nowrap;
+}
+
+.cert-item:hover{
+    box-shadow:0 0 15px rgba(0,255,136,0.15);
+    transform:translateY(-2px);
+    transition:0.3s;
 }
