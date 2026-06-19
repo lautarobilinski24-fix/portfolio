@@ -34,7 +34,7 @@ setInterval(draw,30);
 
 /* TYPING */
 const title = document.querySelector(".typing");
-const text = "Hola, soy Tu Nombre";
+const text = "Lautaro Javier Bilinski";
 let i=0;
 
 function type(){
