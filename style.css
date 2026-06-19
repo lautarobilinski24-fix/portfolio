@@ -1,207 +1,135 @@
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
+/* =========================
+   RESET GENERAL
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-html{
-scroll-behavior:smooth;
+html {
+    scroll-behavior: smooth;
 }
 
-body{
-background:#030303;
-color:#ffffff;
-font-family:'Segoe UI',sans-serif;
-overflow-x:hidden;
+body {
+    background: #030303;
+    color: #ffffff;
+    font-family: 'Segoe UI', sans-serif;
+    overflow-x: hidden;
+    padding-top: 80px; /* evita que el nav tape contenido */
 }
 
-/* Fondo Matrix */
+/* =========================
+   NAVBAR
+========================= */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 
-#matrix{
-position:fixed;
-top:0;
-left:0;
-width:100%;
-height:100%;
-z-index:-1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px 40px;
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(8px);
 }
 
-/* Navbar */
-
-nav{
-position:fixed;
-top:0;
-width:100%;
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:20px 60px;
-background:rgba(0,0,0,.55);
-backdrop-filter:blur(15px);
-border-bottom:1px solid rgba(0,255,120,.15);
-z-index:999;
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
 }
 
-.logo{
-font-size:28px;
-font-weight:700;
-color:#00ff88;
-text-shadow:0 0 15px #00ff88;
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.3s;
 }
 
-nav ul{
-display:flex;
-list-style:none;
-gap:25px;
+nav ul li a:hover {
+    color: #00ff88;
 }
 
-nav a{
-text-decoration:none;
-color:white;
-transition:.3s;
+/* =========================
+   HERO
+========================= */
+.hero {
+    min-height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 60px 20px;
 }
 
-nav a:hover
-
-/* Hero */
-
-.hero{
-min-height:100vh;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-text-align:center;
-padding:40px;
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 15px;
 }
 
-.hero h1{
-    font-size:6rem;
-    font-weight:800;
-    color:white;
-    text-align:center;
-    text-shadow:
-        0 0 10px #00ff88,
-        0 0 20px #00ff88,
-        0 0 40px #00ff88;
-    margin-bottom:20px;
+.hero p {
+    font-size: 1.2rem;
+    opacity: 0.8;
 }
 
-.hero h2{
-margin-top:15px;
-color:#00ff88;
+/* =========================
+   SECCIONES GENERALES
+========================= */
+section {
+    padding: 80px 20px;
 }
 
-.hero p{
-margin-top:20px;
-max-width:800px;
-color:#d5d5d5;
-line-height:1.8;
+/* =========================
+   BOTONES (si usás)
+========================= */
+button, .btn {
+    padding: 10px 20px;
+    background: #00ff88;
+    border: none;
+    color: #000;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
-/* Botones */
-
-.buttons{
-margin-top:35px;
+button:hover, .btn:hover {
+    transform: scale(1.05);
 }
 
-.buttons a{
-display:inline-block;
-margin:10px;
-padding:14px 28px;
-border-radius:12px;
-text-decoration:none;
-color:white;
-border:1px solid #00ff88;
-transition:.3s;
+/* =========================
+   FOOTER
+========================= */
+footer {
+    text-align: center;
+    padding: 30px;
+    opacity: 0.6;
 }
 
-.buttons a:hover{
-background:#00ff88;
-color:black;
-box-shadow:0 0 25px #00ff88;
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px 20px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
 }
-
-/* Secciones */
-
-section{
-padding:120px 10%;
-}
-
-section h2{
-color:#00ff88;
-margin-bottom:30px;
-font-size:2.3rem;
-}
-
-/* Cards */
-
-.cards{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:20px;
-}
-
-.card{
-background:rgba(255,255,255,.05);
-backdrop-filter:blur(12px);
-border:1px solid rgba(255,255,255,.08);
-border-radius:18px;
-padding:25px;
-text-align:center;
-transition:.3s;
-}
-
-.card:hover{
-transform:translateY(-8px);
-box-shadow:0 0 20px rgba(0,255,120,.25);
-border-color:#00ff88;
-}
-
-/* Proyectos */
-
-.project{
-background:rgba(255,255,255,.05);
-backdrop-filter:blur(12px);
-border-radius:18px;
-padding:35px;
-border:1px solid rgba(255,255,255,.08);
-}
-
-/* Contacto */
-
-#contact p{
-margin-bottom:15px;
-}
-
-/* Footer */
-
-footer{
-text-align:center;
-padding:30px;
-color:#999;
-}
-
-/* Responsive */
-
-@media(max-width:768px){
-
-```
-nav{
-    flex-direction:column;
-    gap:15px;
-    padding:20px;
-}
-
-.hero h1{
-    font-size:2.7rem;
-}
-
-nav ul{
-    flex-wrap:wrap;
-    justify-content:center;
-}
-```
-
-}
-
