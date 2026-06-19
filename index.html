@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<title>Portfolio | Tu Nombre</title>
+<title>Portfolio | Hacker UI</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
@@ -12,126 +12,76 @@
 
 <!-- NAV -->
 <nav>
-    <div class="logo">LB</div>
+  <div class="logo">TU NOMBRE</div>
 
-    <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#certs">Certs</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
+  <div class="nav-buttons">
+    <a href="#about" class="nav-btn">About</a>
+    <a href="#experience" class="nav-btn">Experience</a>
+    <a href="#skills" class="nav-btn">Skills</a>
+    <a href="#contact" class="nav-btn">Contact</a>
+  </div>
 </nav>
 
 <!-- HERO -->
-<section id="home" class="hero">
-    <h1 class="typing"></h1>
-    <p class="subtitle"> Cybersecurity | Red Team | Systems Analysis</p>
+<section class="hero">
+  <h1 class="glow">Hola, soy TU NOMBRE</h1>
+  <p>Técnico en Sistemas | Ciberseguridad | Python</p>
 
-    <div class="buttons">
-        <a href="#projects" class="btn">Ver proyectos</a>
-        <a href="https://github.com/tuusuario" target="_blank" class="btn-outline">GitHub</a>
-        <a href="CV.pdf" target="_blank" class="btn-outline">CV</a>
-    </div>
+  <div class="hero-buttons">
+    <a href="CV.pdf" class="btn">📄 Descargar CV</a>
+    <a href="mailto:tucorreo@gmail.com" class="btn">✉ Email</a>
+    <a href="https://linkedin.com/in/tuusuario" target="_blank" class="btn">LinkedIn</a>
+    <a href="https://github.com/tuusuario" target="_blank" class="btn">GitHub</a>
+  </div>
 </section>
 
 <!-- ABOUT -->
-<section id="about" class="section">
-    <h2 class="title">About</h2>
-
-    <div class="card">
-        <p>
-            Soy analista en sistemas enfocado en ciberseguridad, redes y automatización con Python.
-            Experiencia en soporte técnico y desarrollo de herramientas ofensivas.
-        </p>
-    </div>
+<section id="about" class="panel">
+  <h2>About</h2>
+  <p>
+    Técnico en sistemas con enfoque en ciberseguridad, redes y análisis de sistemas.
+  </p>
 </section>
 
 <!-- EXPERIENCE -->
-<section id="experience" class="section">
-    <h2 class="title">Experience</h2>
+<section id="experience" class="panel">
+  <h2>Experience</h2>
 
-    <div class="card">
-        <h3>Soporte Técnico</h3>
-        <p>Resolución de incidencias, mantenimiento de sistemas y redes.</p>
-    </div>
-</section>
-
-<!-- PROJECTS -->
-<section id="projects" class="section">
-    <h2 class="title">Projects</h2>
-
-    <div class="grid">
-
-        <div class="card project">
-            <h3>Sistema de Turnos</h3>
-            <p>Gestión para laboratorio</p>
-        </div>
-
-        <div class="card project">
-            <h3>Python Tools</h3>
-            <p>Automatización de tareas</p>
-        </div>
-
-        <div class="card project">
-            <h3>Cyber Lab</h3>
-            <p>Prácticas de seguridad</p>
-        </div>
-
-    </div>
+  <div class="card3d">
+    <h3>Soporte Técnico</h3>
+    <p>Resolución de incidencias y mantenimiento de sistemas.</p>
+    <button class="small-btn">+ Agregar experiencia</button>
+  </div>
 </section>
 
 <!-- SKILLS -->
-<section id="skills" class="section">
-    <h2 class="title">Skills</h2>
+<section id="skills" class="panel">
+  <h2>Skills</h2>
 
-    <div class="skills">
-        <div class="skill">Python <span></span></div>
-        <div class="skill">Linux <span></span></div>
-        <div class="skill">Networking <span></span></div>
-        <div class="skill">Cybersecurity <span></span></div>
-    </div>
-</section>
+  <div class="skills-grid">
 
-<!-- CERTIFICATIONS -->
-<section id="certs" class="section">
-    <h2 class="title">Certifications</h2>
+    <div class="skill-card">Python</div>
+    <div class="skill-card">Linux</div>
+    <div class="skill-card">Networking</div>
+    <div class="skill-card">Cybersecurity</div>
 
-    <div class="grid">
+  </div>
 
-        <div class="card">
-            <h3>Python</h3>
-            <a href="certificados/python.pdf" target="_blank" class="btn-small">Ver PDF</a>
-        </div>
-
-        <div class="card">
-            <h3>Ciberseguridad</h3>
-            <a href="certificados/cyber.pdf" target="_blank" class="btn-small">Ver PDF</a>
-        </div>
-
-        <div class="card">
-            <h3>Microsoft Security</h3>
-            <a href="https://learn.microsoft.com" target="_blank" class="btn-small">Ver badge</a>
-        </div>
-
-    </div>
+  <button class="small-btn">+ Agregar skill</button>
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="section">
-    <h2 class="title">Contact</h2>
+<section id="contact" class="panel">
+  <h2>Contact</h2>
 
-    <div class="card">
-        <p>Email: tucorreo@gmail.com</p>
+  <div class="card3d">
+    <p>Email: tucorreo@gmail.com</p>
 
-        <div class="buttons">
-            <a href="mailto:tucorreo@gmail.com" class="btn">Email</a>
-            <a href="https://github.com/tuusuario" class="btn-outline">GitHub</a>
-            <a href="https://linkedin.com/in/tuusuario" class="btn-outline">LinkedIn</a>
-        </div>
+    <div class="hero-buttons">
+      <a href="mailto:tucorreo@gmail.com" class="btn">Enviar Email</a>
+      <a href="https://linkedin.com/in/tuusuario" class="btn">LinkedIn</a>
     </div>
+  </div>
 </section>
 
 <script src="script.js"></script>
