@@ -1,4 +1,3 @@
-/* MATRIX */
 const canvas = document.getElementById("matrix");
 const ctx = canvas.getContext("2d");
 
@@ -6,13 +5,13 @@ canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
 const letters = "01";
-const fontSize = 14;
+const fontSize = 16;
 const columns = canvas.width / fontSize;
 
 const drops = Array(Math.floor(columns)).fill(1);
 
 function draw(){
-ctx.fillStyle = "rgba(0,0,0,0.05)";
+ctx.fillStyle = "rgba(0,0,0,0.06)";
 ctx.fillRect(0,0,canvas.width,canvas.height);
 
 ctx.fillStyle = "#00ff88";
@@ -30,25 +29,24 @@ drops[i]++;
 }
 }
 
-setInterval(draw,33);
+setInterval(draw,30);
 
-/* TYPING EFFECT */
+/* TYPING */
 const title = document.querySelector(".typing");
 const text = "Hola, soy Tu Nombre";
-let index = 0;
+let i = 0;
 
 function type(){
-if(index < text.length){
-title.innerHTML += text.charAt(index);
-index++;
-setTimeout(type,100);
+if(i < text.length){
+title.innerHTML += text.charAt(i);
+i++;
+setTimeout(type,90);
 }
 }
 
 title.innerHTML = "";
 type();
 
-/* RESIZE FIX */
 window.addEventListener("resize",()=>{
 location.reload();
 });
