@@ -25,18 +25,12 @@ ctx.fillText(text,i*fontSize,drops[i]*fontSize);
 if(drops[i]*fontSize > canvas.height && Math.random()>0.975){
 drops[i]=0;
 }
+
 drops[i]++;
 }
 }
 
 setInterval(draw,30);
-
-/* LOADER */
-window.addEventListener("load",()=>{
-setTimeout(()=>{
-document.getElementById("loader").style.display="none";
-},1200);
-});
 
 /* TYPING */
 const title = document.querySelector(".typing");
@@ -53,18 +47,6 @@ setTimeout(type,80);
 
 title.innerHTML="";
 type();
-
-/* SCROLL REVEAL */
-const elements = document.querySelectorAll(".reveal");
-
-window.addEventListener("scroll",()=>{
-elements.forEach(el=>{
-const top = el.getBoundingClientRect().top;
-if(top < window.innerHeight - 100){
-el.classList.add("active");
-}
-});
-});
 
 /* RESIZE */
 window.addEventListener("resize",()=>{
