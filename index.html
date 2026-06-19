@@ -2,16 +2,11 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<title>Portfolio | LautaroBilinski</title>
+<title>Portfolio | Tu Nombre</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
-<!-- LOADER -->
-<div id="loader">
-    <h1>Inicializando sistema...</h1>
-</div>
 
 <canvas id="matrix"></canvas>
 
@@ -20,82 +15,122 @@
     <div class="logo">Tu Nombre</div>
 
     <ul>
-        <li><a href="#home">Inicio</a></li>
-        <li><a href="#about">Sobre mí</a></li>
-        <li><a href="#projects">Proyectos</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
         <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contacto</a></li>
+        <li><a href="#certs">Certs</a></li>
+        <li><a href="#contact">Contact</a></li>
     </ul>
 </nav>
 
 <!-- HERO -->
 <section id="home" class="hero">
     <h1 class="typing"></h1>
-    <p class="subtitle">Ciberseguridad | Red Team | Analista de Sistemas</p>
+    <p class="subtitle">Técnico en Sistemas | Ciberseguridad | Python</p>
 
-    <div class="hero-buttons">
+    <div class="buttons">
         <a href="#projects" class="btn">Ver proyectos</a>
-        <a href="#contact" class="btn-outline">Contacto</a>
+        <a href="https://github.com/tuusuario" target="_blank" class="btn-outline">GitHub</a>
+        <a href="CV.pdf" target="_blank" class="btn-outline">CV</a>
     </div>
 </section>
 
 <!-- ABOUT -->
-<section id="about" class="reveal">
-    <h2 class="title">Sobre mí</h2>
+<section id="about" class="section">
+    <h2 class="title">About</h2>
 
     <div class="card">
         <p>
-            Soy Analista en sistemas con enfoque en ciberseguridad (Red Team), desarrollo en Python y automatización.
-            Experiencia en soporte técnico y soluciones informáticas.
+            Técnico en sistemas enfocado en ciberseguridad, redes y automatización con Python.
+            Experiencia en soporte técnico y desarrollo de herramientas.
         </p>
     </div>
 </section>
 
+<!-- EXPERIENCE -->
+<section id="experience" class="section">
+    <h2 class="title">Experience</h2>
+
+    <div class="card">
+        <h3>Soporte Técnico</h3>
+        <p>Resolución de incidencias, mantenimiento de sistemas y redes.</p>
+    </div>
+</section>
+
 <!-- PROJECTS -->
-<section id="projects" class="reveal">
-    <h2 class="title">Proyectos</h2>
+<section id="projects" class="section">
+    <h2 class="title">Projects</h2>
 
     <div class="grid">
 
         <div class="card project">
-            <h3>Sistema de turnos</h3>
+            <h3>Sistema de Turnos</h3>
             <p>Gestión para laboratorio</p>
         </div>
 
         <div class="card project">
-            <h3>Python tools</h3>
+            <h3>Python Tools</h3>
             <p>Automatización de tareas</p>
         </div>
 
         <div class="card project">
-            <h3>Ciberseguridad</h3>
-            <p>Laboratorio de pruebas</p>
+            <h3>Cyber Lab</h3>
+            <p>Prácticas de seguridad</p>
         </div>
 
     </div>
 </section>
 
 <!-- SKILLS -->
-<section id="skills" class="reveal">
+<section id="skills" class="section">
     <h2 class="title">Skills</h2>
 
     <div class="skills">
+        <div class="skill">Python <span></span></div>
+        <div class="skill">Linux <span></span></div>
+        <div class="skill">Networking <span></span></div>
+        <div class="skill">Cybersecurity <span></span></div>
+    </div>
+</section>
 
-        <div class="skill">Python <div class="bar"><span style="width:85%"></span></div></div>
-        <div class="skill">Linux <div class="bar"><span style="width:75%"></span></div></div>
-        <div class="skill">Ciberseguridad <div class="bar"><span style="width:80%"></span></div></div>
-        <div class="skill">Networking <div class="bar"><span style="width:70%"></span></div></div>
+<!-- CERTIFICATIONS -->
+<section id="certs" class="section">
+    <h2 class="title">Certifications</h2>
+
+    <div class="grid">
+
+        <div class="card">
+            <h3>Python</h3>
+            <a href="certificados/python.pdf" target="_blank" class="btn-small">Ver PDF</a>
+        </div>
+
+        <div class="card">
+            <h3>Ciberseguridad</h3>
+            <a href="certificados/cyber.pdf" target="_blank" class="btn-small">Ver PDF</a>
+        </div>
+
+        <div class="card">
+            <h3>Microsoft Security</h3>
+            <a href="https://learn.microsoft.com" target="_blank" class="btn-small">Ver badge</a>
+        </div>
 
     </div>
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="reveal">
-    <h2 class="title">Contacto</h2>
+<section id="contact" class="section">
+    <h2 class="title">Contact</h2>
 
-    <div class="card contact">
-        <p>Email: lautarobilinski01@gmail.com</p>
-        <p>GitHub: github.com/tuusuario</p>
+    <div class="card">
+        <p>Email: tucorreo@gmail.com</p>
+
+        <div class="buttons">
+            <a href="mailto:tucorreo@gmail.com" class="btn">Email</a>
+            <a href="https://github.com/tuusuario" class="btn-outline">GitHub</a>
+            <a href="https://linkedin.com/in/tuusuario" class="btn-outline">LinkedIn</a>
+        </div>
     </div>
 </section>
 
