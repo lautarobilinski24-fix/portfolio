@@ -76,8 +76,15 @@ padding:40px;
 }
 
 .hero h1{
-font-size:5rem;
-text-shadow:0 0 20px rgba(0,255,120,.5);
+    font-size:6rem;
+    font-weight:800;
+    color:white;
+    text-align:center;
+    text-shadow:
+        0 0 10px #00ff88,
+        0 0 20px #00ff88,
+        0 0 40px #00ff88;
+    margin-bottom:20px;
 }
 
 .hero h2{
