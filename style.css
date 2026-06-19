@@ -301,3 +301,28 @@ margin-bottom:25px;
     transform:translateY(-8px) scale(1.02);
     box-shadow:0 0 25px rgba(0,255,136,0.25);
 }
+
+/* HERO ICONS */
+.hero-icons{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+    margin-top:25px;
+}
+
+.icon-card{
+    padding:10px 15px;
+    border:1px solid rgba(0,255,136,0.3);
+    border-radius:10px;
+    color:#00ff88;
+    font-size:14px;
+    background:rgba(0,0,0,0.3);
+    box-shadow:0 0 10px rgba(0,255,136,0.1);
+    transition:0.3s;
+}
+
+.icon-card:hover{
+    transform:translateY(-3px);
+    box-shadow:0 0 20px rgba(0,255,136,0.3);
+}
