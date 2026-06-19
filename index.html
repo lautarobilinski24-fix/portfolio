@@ -12,7 +12,7 @@
 
 <!-- NAV -->
 <nav>
-    <h2 class="logo">Tu Nombre</h2>
+    <div class="logo">Tu Nombre</div>
 
     <ul>
         <li><a href="#home">Inicio</a></li>
@@ -24,34 +24,59 @@
 
 <!-- HERO -->
 <section id="home" class="hero">
-    <h1 class="typing">Hola, soy Tu Nombre</h1>
-    <p>Técnico en sistemas | Ciberseguridad | Python</p>
-    <a href="#projects" class="btn">Ver proyectos</a>
+    <h1 class="typing"></h1>
+    <p class="subtitle">Técnico en sistemas | Ciberseguridad | Python</p>
+
+    <div class="hero-buttons">
+        <a href="#projects" class="btn">Ver proyectos</a>
+        <a href="#contact" class="btn-outline">Contacto</a>
+    </div>
 </section>
 
 <!-- ABOUT -->
 <section id="about">
-    <h2>Sobre mí</h2>
-    <p>
-        Técnico en sistemas con enfoque en ciberseguridad, automatización y desarrollo en Python.
-    </p>
+    <h2 class="title">Sobre mí</h2>
+
+    <div class="card">
+        <p>
+            Soy técnico en sistemas con experiencia en soporte, ciberseguridad y desarrollo en Python.
+            Me enfoco en automatización, seguridad informática y desarrollo de herramientas.
+        </p>
+    </div>
 </section>
 
 <!-- PROJECTS -->
 <section id="projects">
-    <h2>Proyectos</h2>
+    <h2 class="title">Proyectos</h2>
 
     <div class="grid">
-        <div class="card">Sistema de turnos</div>
-        <div class="card">App Python</div>
-        <div class="card">Seguridad / Pentesting</div>
+
+        <div class="card project">
+            <h3>Sistema de turnos</h3>
+            <p>Gestión de turnos para laboratorio</p>
+        </div>
+
+        <div class="card project">
+            <h3>Python tools</h3>
+            <p>Automatización de tareas</p>
+        </div>
+
+        <div class="card project">
+            <h3>Seguridad</h3>
+            <p>Prácticas de ciberseguridad</p>
+        </div>
+
     </div>
 </section>
 
 <!-- CONTACT -->
 <section id="contact">
-    <h2>Contacto</h2>
-    <p>Email: tucorreo@gmail.com</p>
+    <h2 class="title">Contacto</h2>
+
+    <div class="card contact">
+        <p>Email: tucorreo@gmail.com</p>
+        <p>GitHub: github.com/tuusuario</p>
+    </div>
 </section>
 
 <script src="script.js"></script>
