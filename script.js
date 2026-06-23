@@ -43,3 +43,20 @@ function copyEmail() {
     alert("Email copiado al portapapeles");
 
 }
+
+document.getElementById("gmailBtn").addEventListener("click", function(e){
+
+    e.preventDefault();
+
+    const esMovil = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+
+    if(esMovil){
+        window.location.href = "mailto:lautarobilinski01@gmail.com";
+    }else{
+        window.open(
+            "https://mail.google.com/mail/?view=cm&fs=1&to=lautarobilinski01@gmail.com",
+            "_blank"
+        );
+    }
+
+});
