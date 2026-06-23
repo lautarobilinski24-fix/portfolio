@@ -74,8 +74,12 @@ padding:20px;
 }
 
 .glow{
-font-size:3.5rem;
+font-size:clamp(2.2rem,8vw,5rem);
+line-height:1.1;
 text-shadow:0 0 15px #00ff88;
+max-width:95%;
+margin:auto;
+word-wrap:break-word;
 }
 
 /* BOTONES */
