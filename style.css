@@ -507,6 +507,18 @@ body{
     .hero-icons{
         margin-top:20px;
     }
+
+    @media(max-width:768px){
+
+    .hero{
+        min-height:auto;
+        padding-top:90px;
+        padding-bottom:30px;
+    }
+
+    .glow{
+        font-size:2.2rem;
+    }
 }
 
 
