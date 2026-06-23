@@ -64,10 +64,10 @@ transform:translateY(-2px);
 
 /* HERO */
 .hero{
-min-height:100vh;
+min-height:auto;
 display:flex;
 flex-direction:column;
-justify-content:center;
+justify-content:flex-start;
 align-items:center;
 text-align:center;
 padding:120px 20px 60px;
