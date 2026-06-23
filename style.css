@@ -64,13 +64,13 @@ transform:translateY(-2px);
 
 /* HERO */
 .hero{
-height:100vh;
+min-height:100vh;
 display:flex;
 flex-direction:column;
 justify-content:center;
 align-items:center;
 text-align:center;
-padding:20px;
+padding:120px 20px 60px;
 }
 
 .glow{
@@ -486,3 +486,27 @@ html{
 body{
     overflow-x:hidden;
 }
+
+@media(max-width:768px){
+
+    .hero{
+        min-height:auto;
+        padding-top:140px;
+        padding-bottom:40px;
+    }
+
+    .glow{
+        font-size:2.8rem;
+        margin-bottom:20px;
+    }
+
+    .hero-buttons{
+        margin-top:15px;
+    }
+
+    .hero-icons{
+        margin-top:20px;
+    }
+}
+
+
