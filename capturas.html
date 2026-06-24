@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Sistema de Gestión para Laboratorios</title>
+
+<style>
+
+body{
+    background:#0a0a0a;
+    color:white;
+    font-family:Arial, sans-serif;
+    margin:0;
+    padding:30px;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+}
+
+h1{
+    color:#00ff88;
+    text-align:center;
+}
+
+.description{
+    text-align:center;
+    max-width:800px;
+    margin:20px auto 40px;
+    line-height:1.6;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+    gap:20px;
+}
+
+.gallery img{
+    width:100%;
+    border-radius:10px;
+    border:1px solid #00ff88;
+    transition:.3s;
+}
+
+.gallery img:hover{
+    transform:scale(1.02);
+}
+
+.btn{
+    display:inline-block;
+    margin-bottom:30px;
+    padding:12px 20px;
+    background:#00ff88;
+    color:black;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+.btn:hover{
+    opacity:.9;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<a href="index.html" class="btn">⬅ Volver al Portfolio</a>
+
+<h1>🧪 Sistema de Gestión para Laboratorios</h1>
+
+<p class="description">
+Sistema desarrollado en Python para la administración de análisis clínicos,
+obras sociales y generación de presupuestos. Diseñado para optimizar procesos
+operativos y administrativos en entornos de laboratorio.
+</p>
+
+<div class="gallery">
+
+<img src="capturas/dashboard.png" alt="Dashboard principal">
+
+<img src="capturas/analisis.png" alt="Gestión de análisis">
+
+<img src="capturas/obras-sociales.png" alt="Obras sociales">
+
+<img src="capturas/presupuesto.png" alt="Generación de presupuestos">
+
+<img src="capturas/codigo-python.png" alt="Código fuente en Python">
+
+</div>
+
+</div>
+
+</body>
+</html>
